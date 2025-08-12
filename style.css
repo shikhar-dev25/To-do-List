@@ -4,7 +4,75 @@
   font-family: "Space Grotesk";
   box-sizing: border-box;
 }
+
+/* back button */
+
+.back-btn {
+  display: inline-block;
+  margin: 30px 0 0 40px;
+  font-size: 20px;
+  color: #ea333d;
+  text-decoration: none;
+  font-weight: bold;
+  background: #fff;
+  padding: 10px 24px;
+  border-radius: 10px;
+  transition: background 0.2s;
+}
+.back-btn:hover {
+    background-color: #ea333d;
+    color: #fff;
+  }
+
+
+/* back button */
+
+.home-page {
+  background: #222;
+  color: #fff;
+}
+
+.center-box {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-row {
+  margin-top: 40px;
+  display: flex;
+  gap: 30px;
+}
+
+.main-btn {
+  text-decoration: none;
+  border: none;
+  background-color: #ea333d;
+  color: #fff;
+  border-radius: 10px;
+  padding: 20px 50px;
+  font-size: 22px;
+  font-weight: 700;
+  box-shadow: 0 2px 9px #0005;
+  transition: 0.2s;
+}
+
+.main-btn:hover {
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 8px 24px #0009;
+}
+
+/* To-do */
+
+body{
+  background-color: #212121;
+}
+
 .main-container{
+  display: flex;
   width: 100%;
   min-height: 100vh;
   background-color: #212121;
@@ -102,3 +170,90 @@ ul li span{
 /* ul li span:hover{
   background-color: #2458c0;
 } */
+
+/* To-do */
+
+
+
+/* Notes CSS */
+
+.outer-container{
+  min-width: 600px;
+  height: 100%;
+  border: 1px wolid white;
+  margin: 40px;
+}
+
+.notes-body{
+  width: 100vw;
+  height: 100%;
+  background-color: #212121;
+}
+
+.notes{
+  /* margin: 10px; */
+  /* border-radius: 10px; */
+  /* border: 1px solid white; */
+    width: 100%;
+    min-height: 100vh;
+    border-radius: 10px;
+    background-color: black;
+    color: #fff;
+    padding: 100px;
+}
+
+.notes-container{
+  flex-wrap: wrap;
+  margin: 50px 0px;
+  justify-content: center;
+  align-items: center;
+  background-color: #212121;
+  display: flex;
+  gap: 20px;
+  border-radius: 10px;
+}
+
+.notes h1{
+  margin: 10px 0px;
+    display: flex;
+    align-items: center;
+    font-size: 35px;
+    font-weight: 600;
+}
+.notes h1 img{
+    width: 60px;
+}
+.notes button img{
+    width: 25px;
+    margin-right: 8px;
+}
+.notes button{
+    border: none;
+  outline: none;
+  padding: 16px 50px;
+  background: #ea333d;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.input-box{
+    position: relative;
+    min-height: 300px;
+    min-width: 400px;
+    max-height: auto;
+    max-width: 600px;
+    background: #dbdbdb;
+    color: #333;
+    padding: 20px;
+    margin: 20px 0;
+    outline: none;
+    border-radius: 5px;
+}
+.input-box img{
+    width: 25px;
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    cursor: pointer;
+}
