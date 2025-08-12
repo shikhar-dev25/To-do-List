@@ -65,6 +65,27 @@
   box-shadow: 0 8px 24px #0009;
 }
 
+/* Mobile */
+@media only screen and (max-width: 580px) {
+  .center-box h1{
+    margin-top: -400px;
+    padding: 0px 30px;
+    font-size: 24px;
+  }
+
+  .button-row{
+    display: flex;
+    flex-direction: column;
+    gap: 40px
+    ;
+  }
+  .main-btn{
+    width: 300px;
+  }
+}
+/* Mobile */
+
+
 /* To-do */
 
 body{
@@ -103,21 +124,26 @@ body{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: #252525;
+  /* background: #252525; */
   border-radius: 10px;
   padding-left: 20px;
   margin-bottom: 25px;
+  gap: 10px;
 }
 input{
+  width: 100%;
+  height: 60px;
+  border-radius: 10px;
+  background-color: #212121;
   color: #fff;
   flex: 1;
   border: none;
   outline: none;
-  background: transparent;
   padding: 8px;
   font-weight: 20px;
 }
 button{
+  height: 60px;
   border: none;
   outline: none;
   padding: 16px 50px;
@@ -166,6 +192,9 @@ ul li span{
   text-align: center;
   border-radius: 50%;
 }
+
+
+
 
 /* ul li span:hover{
   background-color: #2458c0;

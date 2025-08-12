@@ -2,16 +2,43 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>To-Do List</title>
+  <link rel="icon" type="image/x-icon" href="/to-do/images/favicon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <style>
+    @media only screen and (max-width: 600px) {
+      .todo-app{
+        width: 88%;
+      }
+      .todo-app h1{
+        font-size: 32px;
+      }
+      .row{
+        gap: 20px;
+        display: flex;
+        flex-direction: column;
+      }
+      input{
+        min-height: 60px;
+        min-width: 300px;
+      }
+      .row button{
+        min-height: 60px;
+        min-width: 300px;
+      }
+
+  }
+  </style>
 </head>
 <body>
   <a href="index.html" class="back-btn">&larr; Home</a>
   <section class="todo-app">
     <h1>To-Do List</h1>
+
     <div class="row">
       <input type="text" id="input-box" placeholder="Add your new task">
       <button onclick="taskAdd()">Add</button>
